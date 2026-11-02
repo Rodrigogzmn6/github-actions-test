@@ -14,10 +14,10 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v4
         
-      - name: Configure Java 26
+      - name: Configure Java 25
         uses: actions/setup-java@v4
         with:
-          java-version: 26
+          java-version: 25
           distribution: 'temurin'
           cache: 'maven'
 
