@@ -1,6 +1,6 @@
 # Stage 1: Build
 # Use a Maven image to compile project
-FROM maven:3.9.6-eclipse-temurin-25 AS build
+FROM maven:3.10.0-eclipse-temurin-25 AS build
 WORKDIR /app
 
 # Copy the dependencies configuration file
@@ -14,7 +14,7 @@ RUN mvn -B -DskipTests=false clean package
 
 # Stage 2: Run
 # Use a lighter image with only the JRE to run the app
-FROM eclipse-temurin:25-jre-jammy
+FROM eclipse-temurin:25.0.5_8-jre-jammy
 WORKDIR /app
 
 # Assign port with env variable
