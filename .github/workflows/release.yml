@@ -28,7 +28,6 @@ jobs:
       - name: Create Github Release (with JAR)
         uses: softprops/action-gh-release@v2
         with:
-          files: 'target/*.jar'
           title: 'Release ${{ github.ref_name }}'
           body: 'Successful release of ${{ github.ref_name }}'
           files: |
