@@ -3,7 +3,7 @@ name: Release on tag
 on:
   push:
     tags:
-      - 'v*' # When push a tag that starts with 'v'
+      - 'v*' # When push a tag that starts with a 'v'
 
 permissions:
   contents: write # Write permissions to the repository
